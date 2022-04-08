@@ -1,0 +1,11 @@
+Hello, I am looking for a complete services to  build a website that act as a NFT shop (we are selling art in gif and png format, and  only the admin can post the art)
+
+the requirement is:
+- The item collection is a collectible art that contain metadata such as level, and trait (e.g. with accessories, hair type, etc)
+- in the website, user will need to use metamaskto purchase
+- whenever an item is purchased, it will be minted to the purchaser account and posted to opensea collection
+- [optional] we will also need a discord bot to be create to be able to pull the user data from website and the number of token they have
+
+Please let me know if any of you need a call for further scope clarification
+
+Timeline is tight, I am looking for it to be done within 1 week after job started

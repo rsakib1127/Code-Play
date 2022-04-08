@@ -1,0 +1,13 @@
+F2/*
+P1/*
+P2/*
+P3/*
+
+git remote add flab https://github.com/manoj508/Flab_repos
+
+echo "F2/*" > .git/info/sparse-checkout
+
+git config core.sparseCheckout true
+
+
+

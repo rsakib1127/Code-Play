@@ -1,0 +1,7 @@
+python3 manage.py makemigrations
+python3 manage.py sqlmigrate StudentPortal 0001
+python3 manage.py migrate 
+
+
+python3 manage.py migrate --fake
+

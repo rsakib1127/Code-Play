@@ -1,0 +1,163 @@
+"Authorization: token 060a79c0b5c6255f9a6a08386db94819402d8016"
+
+curl -i -H "Authorization: token 060a79c0b5c6255f9a6a08386db94819402d8016" -d '{ "id": 5, "first_name": "Tuntuni", "last_name": "Rahman", "birth_date": "1997-10-19", "email": "rsakib1127@gmail.com", "username": "Sakib1127", "password": "zaq13edc", "school": null}'      -H "Content-Type: application/json"    -X    PUT  http://127.0.0.1:8000/teacher/api/list/5/
+
+{"first_name": "Sakib","last_name": "Rahman","is_student": false,"is_staff": true, "is_canteenEmployee": false, "username": "Sakib1127","email": "demo324@gmail.com","password": "zaq13edc"}
+
+curl   -H "Content-Type: application/json"    -X    DELETE  http://127.0.0.1:8000/teacher/api/list/6/
+
+curl -i -d '{"first_name": "Sakib","last_name": "Rahman","is_student": false, "is_staff": true, "is_canteenEmployee": false, "username": "Sakib13","email": "demo324@gmail.com", "password": "zaq13edc"}'      -H   "Content-Type: application/json"  -u sakib1127:zaq13edc  -X    POST   http://127.0.0.1:8000/users/
+
+
+## shop
+
+curl -i -d '{"shop_name": "Kacchi Vhai", "description": "This shop sells all types of biriyani items and rich food items", "location": "Chasara, Narayanganj Sadar, Narayanganj"}'      -H   "Content-Type: application/json"  -u sakib1127:zaq13edc  -X    POST   http://127.0.0.1:8000/shops/
+
+curl -i -d '{"shop_name": "Allahr Daan Biriyani", "description": "This shop sells all types of biriyani items and rich food items", "location": "Masdair, Fatullah, Narayanganj"}'      -H   "Content-Type: application/json"  -u sakib1127:zaq13edc  -X    POST   http://127.0.0.1:8000/shops/
+
+
+
+
+curl -i -d '{"food_name": "Kacchi", "food_category": 2, "price": 90, "availability": true, "description": "good food", "shop": 1 }'      -H   "Content-Type: application/json"    -X    POST   http://127.0.0.1:8000/food/
+
+
+
+curl -i -d '{"creator":  8, "token_name": "MB55", "food_category": 1, "paid": true , "pending": false, "complete": true, "price": 100  }'      -H   "Content-Type: application/json"  -u sakib1127:zaq13edc   -X    POST   http://127.0.0.1:8000/tokens/
+
+
+{"shop_name": "Kacchi Vhai", "description": "This shop sells all types of biriyani items and rich food items", "location": "Chasara, Narayanganj Sadar, Narayanganj"}
+
+{ "token_name": "MB55", "food": 1, "shop": 2, "food_category": 1, "paid": true , "pending": false, "complete": true, "price": 100  }
+
+
+##token 
+
+
+{
+    "token_name": "MF33",
+    "food": 1,
+    "shop": 1,
+    "food_category": 1,
+    "paid": false,
+    "pending": false,
+    "complete": false,
+    "price": 105
+}
+
+{ "token_name": "MB55","food": 1, "shop": 1,  "food_category": 1, "paid": true , "pending": false, "complete": true, "price": 100  }
+
+
+{"food_name": "Kacchi", "food_category": 2, "price": 90, "availability": true, "description": "good food", "shop": 1 }
+
+
+## FoodCategory
+
+{"food_category_type": 2 ,"description": "Lunch" }
+
+
+curl -i -d '{"food_category_type": 2 ,"description": "Lunch" }'      -H   "Content-Type: application/json"  -u sakib1127:zaq13edc   -X    POST   http://127.0.0.1:8000/foodcategory/
+
+
+curl -i -d '{"food_name": "Kacchi", "food_category": 2, "price": 90, "availability": true, "description": "good food", "shop": 1 }'      -H   "Content-Type: application/json"  -u sakib1127:zaq13edc   -X    POST   http://127.0.0.1:8000/foods/
+
+
+#####################################
+#####################################
+
+
+user:
+
+
+    {
+        "first_name": "",
+        "last_name": "",
+        "is_student": false,
+        "is_staff": true,
+        "is_canteenEmployee": false,
+        "username": "sakib1127",
+        "email": "demo@email.com",
+        "tokens": [
+            "http://127.0.0.1:8000/tokens/1/"
+        ]
+    }
+
+# snippet project
+
+
+curl -i -d '{"title": "test", "code": "testing", "linenos": false, "language": "python", "style": "friendly"}'      -H   "Content-Type: application/json"  -u sakib1127:zaq13edc   -X    POST   http://127.0.0.1:8000/snippets/
+
+
+
+curl -i      -H   "Content-Type: application/json"  -u sakib1127:zaq13edc   -X    GET   http://127.0.0.1:8000/snippets/
+
+
+
+curl -i -d '{"id": 2, "title": "edited", "code": "testing", "linenos": false, "language": "python", "style": "friendly"}'      -H   "Content-Type: application/json"    -X    PUT   http://127.0.0.1:8000/snippets/2/
+
+
+.
+
+
+
+ http://ec2-18-191-145-10.us-east-2.compute.amazonaws.com/post
+ 
+ 
+ 
+curl -i  -H "auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTRhYjE0OThhMjM4MzZmNjRhOTVkMDkiLCJpYXQiOjE2MzIzMTg2Mzd9.OFwdhbUjtMDJJ9MDnQFLvDluOtF6acxNVpnbUqwkUr0"  -H "Content-Type: application/json"    -X    GET   http://ec2-18-191-145-10.us-east-2.compute.amazonaws.com/auth/user
+
+
+
+curl -i  -d '{"username": "userdemo3","password": "zaq13edc"}'  -H  "Content-Type: application/json"    -X    POST   http://ec2-18-191-145-10.us-east-2.compute.amazonaws.com/auth/login
+
+
+curl -i   -H  "Content-Type: application/json"    -X    GET   https://127.0.0.1:3000/post
+
+
+proxy_set_header        Host $host;
+      proxy_set_header        X-Real-IP $remote_addr;
+      proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header        X-Forwarded-Proto $scheme;
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTRhYjE0OThhMjM4MzZmNjRhOTVkMDkiLCJpYXQiOjE2MzIzMTg2Mzd9.OFwdhbUjtMDJJ9MDnQFLvDluOtF6acxNVpnbUqwkUr0
+
+
+
+
+
+rm -f db.sqlite3
+rm -r snippets/migrations
+python3 manage.py makemigrations snippets
+python3 manage.py migrate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+curl -i       -H   "Content-Type: application/json" -d '{"username": "adminMyrel","password": "admin123456"}'  -u adminMyrel:admin123456  -X    POST   http://127.0.0.1:8000/api/auth/
+curl -i       -H   "Content-Type: application/json" -d '{"username": "sakib_teacher","password": "zaq13edc"}'  -u sakib_teacher:zaq13edc  -X    POST   http://127.0.0.1:8000/api/auth/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

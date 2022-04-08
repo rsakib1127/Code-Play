@@ -1,0 +1,4 @@
+The Goal of a Learning Management System is to provide education to everyone via the internet and telecommunication. Through the application, a teacher can interact with the students and monitor their study progress. Students can also discuss their problems in the discussion forum. 
+The main challenge for us was developing a user-friendly interface for both students and teachers, stability, scalability, and reliability.
+We used docker for a stable developing environment and performing unit tests more accurately.
+For checking the success rate of the UI design we provide the software to some local rural schools to whether they can use the software efficiently and we also carefully listen to their complaints about the software and fixed those bugs.

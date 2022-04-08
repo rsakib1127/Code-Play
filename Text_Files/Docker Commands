@@ -1,0 +1,62 @@
+# for running a docker Image in the ubuntu machine
+
+sudo docker run docker/whalesay boo
+ 
+# for viewing how many docker are currently running 
+
+sudo docker ps
+
+# to see all container running or not 
+
+sudo docker ps -a
+
+# for stoping a docker image 
+
+docker stop container
+
+# for deletion
+
+docker rm container_Name
+
+
+docker ps # for confirmation of deletion
+
+# for viewing images
+
+docker images
+
+# to remove an image that no longer in use
+
+docker rmi container_name
+
+# for downloading an image from the cloud
+
+docker pull container_name
+
+# set a container sleep for 5 seconds
+
+docker run container_name sleep 5
+
+# for executeing a command in the docker container 
+
+docker exec container_name cat /etc/host # command
+
+# for running an app in the docker container in attach mode
+docker run kodekloud/sample-webapp
+
+# for running an app in the detach mode 
+docker run -d kodekloud/sample-webapp
+
+# for running an app by docker id enter first 5 letter
+docker attach dockerID 
+
+# run STDIN
+docker run -it container/application
+
+# for port mapping 
+# this runs on default port 5000
+
+docker run container/webapp
+
+# for running in a specific port mapped port 5000 to 80 port
+docker run -p 80:5000 image/webapp

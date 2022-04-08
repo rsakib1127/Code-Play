@@ -1,0 +1,7 @@
+# for running an angular application 
+ng serve
+
+# for creating a Component 
+ng generate component MyComponent/todolist
+
+ng generate service InMemoryData

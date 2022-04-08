@@ -1,0 +1,7 @@
+sex,city,age
+male,london,32
+male,manchester,32
+male,oxford,64
+female,oxford,23
+female,london,33
+male,oxford,45

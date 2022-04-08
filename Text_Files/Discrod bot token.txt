@@ -1,0 +1,15 @@
+OTM2MTMwODczMzMyNDgyMTE4.YfIt0A.srreMX9TaRVfY-mDUIncNjB9Q2M
+
+https://discord.com/api/oauth2/authorize?client_id=936130873332482118&permissions=138513214528&scope=bot
+
+
+telegram bot username: cute😊
+bot name: QuttoBot
+
+apikey: 5102257208:AAE5gGkxhcPc0iXsJrjVL5LO5YFgShcbwkw
+
+
+nlpcould.io: api : 6f2e03bc9d7eb412b68cdc183c6cbe6b4690606c
+
+
+curl "https://api.nlpcloud.io/v1/en_core_web_lg/entities"  -H "Authorization: Token 6f2e03bc9d7eb412b68cdc183c6cbe6b4690606c"  -H "Content-Type: application/json"  -X POST -d '{"text":"John Doe has been working for Microsoft in Seattle since 1999."}'

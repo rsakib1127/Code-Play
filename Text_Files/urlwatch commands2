@@ -1,0 +1,19 @@
+# for launhing the software just type
+urlwatch
+
+# for deleting any website you can type
+
+urlwatch --delete enter_job_number
+
+example: urlwatch --delete 1
+
+# for getting job number type
+urlwatch --list
+
+#output: 
+1: GitHub (https://github.com/Traideas/Docx/edit/main/README.md/)
+2: GDPRTableOfContents (https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/)
+3: Introduction (https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/)
+
+
+the 1, 2, 3 are the job numbers.

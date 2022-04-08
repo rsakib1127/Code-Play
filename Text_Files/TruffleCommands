@@ -1,0 +1,56 @@
+./Downloads/ganache-2.5.4-linux-x86_64.AppImage
+
+
+
+truffle console
+
+# this will open the truffle console
+
+
+# after opening the console 
+
+type 
+
+
+web3.eth.getAccounts()
+
+
+web3.eth.getBalance("address of the account")
+
+
+
+#for creating a solidity smart contract 
+
+#first create a directory
+
+mkdir Sol-Project && cd Sol-Project
+
+#then install truffle in the directory
+
+sudo npm install truffle
+
+
+#To initialize an empty project run the below command in the empty truffle cli
+ 
+./node_modules/.bin/truffle init
+
+
+# for adding new contract in the project
+
+cd Contracts
+subl HelloWorld.sol
+
+# For compiling 
+
+./node_modules/.bin/truffle compile
+
+
+
+truffle develop
+
+migrate
+
+
+
+
+

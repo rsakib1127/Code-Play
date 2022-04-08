@@ -1,0 +1,137 @@
+student = [
+    {
+        "user": {
+            "id": 1,
+            "first_name": "Sakib",
+            "last_name": "Rahman",
+            "username": "rsakib1127",
+            "email": "rsakib1127@gmail.com"
+        },
+        "birth_date": "1996-11-27"
+    },
+    {
+        "user": {
+            "id": 2,
+            "first_name": "Istiak",
+            "last_name": "Ahmed",
+            "username": "istiak22",
+            "email": "demo@email.com"
+        },
+        "birth_date": "1995-07-22"
+    }
+]
+
+
+
+
+
+
+teacher = [
+    {
+        "user": {
+            "id": 3,
+            "first_name": "Limon",
+            "last_name": "Safayet",
+            "username": "limon28",
+            "email": "demo@email.com"
+        },
+        "photo": "http://127.0.0.1:8000/media/limon.jpg",
+        "is_verified": true
+    },
+    {
+        "user": {
+            "id": 6,
+            "first_name": "Limon",
+            "last_name": "Ahmed",
+            "username": "sakib112",
+            "email": "demo@email.com"
+        },
+        "photo": "http://127.0.0.1:8000/media/biriyani.jpg",
+        "is_verified": false
+    }
+]
+
+
+
+Material = [
+    {
+        "id": 6,
+        "title": "Course Material Testing",
+        "file": "http://127.0.0.1:8000/media/basic_english_communication_skill_dMuupl2.png",
+        "description": "Testing Course Material Upload method",
+        "photo": "http://127.0.0.1:8000/media/basic_english_communication_skill_A59h6tP.png",
+        "upload_date": "2021-04-26",
+        "price": 100
+    }
+]
+
+
+
+
+ListeningModule = [
+    {
+        "id": 1,
+        "title": "Basic Communication Skill",
+        "file": "http://127.0.0.1:8000/media/basic_english_communication_skill_Gfi8HYl.png",
+        "description": "Very Diffficult",
+        "photo": "http://127.0.0.1:8000/media/basic_english_communication_skill_zluO8kf.png",
+        "upload_date": "2021-04-25",
+        "price": 100
+    },
+    {
+        "id": 2,
+        "title": "Reading Books Technique",
+        "file": "http://127.0.0.1:8000/media/basic_english_communication_skill_hlDHJud.png",
+        "description": "Testing Course Upload method",
+        "photo": "http://127.0.0.1:8000/media/basic_english_communication_skill_8p9Wntr.png",
+        "upload_date": "2021-04-25",
+        "price": 20
+    }
+]
+
+
+
+
+ReadingModule = [
+    {
+        "id": 3,
+        "title": "Reading module Testing",
+        "file": "http://127.0.0.1:8000/media/basic_english_communication_skill_y5WCsfN.png",
+        "description": "Very Diffficult",
+        "photo": "http://127.0.0.1:8000/media/basic_english_communication_skill_tDfhZyy.png",
+        "upload_date": "2021-04-26",
+        "price": 10
+    }
+]
+
+
+SpeakingModule = [
+    {
+        "id": 4,
+        "title": "Speaking Module Testing",
+        "file": "http://127.0.0.1:8000/media/basic_english_communication_skill_Om4eD3O.png",
+        "description": "Testing Speaking Course Upload method",
+        "photo": "http://127.0.0.1:8000/media/basic_english_communication_skill_RXbdi7N.png",
+        "upload_date": "2021-04-26",
+        "price": 100
+    }
+]
+
+
+
+WritingModule = [
+    {
+        "id": 5,
+        "title": "Testing Writing Module",
+        "file": "http://127.0.0.1:8000/media/basic_english_communication_skill_3i33yn3.png",
+        "description": "Testing Writing Module file upload",
+        "photo": "http://127.0.0.1:8000/media/basic_english_communication_skill_RyH8uqZ.png",
+        "upload_date": "2021-04-26",
+        "price": 120
+    }
+]
+
+
+
+
+

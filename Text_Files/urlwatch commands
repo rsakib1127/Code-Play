@@ -1,0 +1,62 @@
+for opening configuaration file type the below command:
+
+urlwatch --edit
+
+for closing file presss 
+
+Ctrl+x
+
+for saving the file press
+ctrl+s
+
+for adding website type the below command
+urlwatch --add url=http://example.org,name=Example
+
+
+how to add a website: 
+just type the command:
+
+urlwatch --edit
+
+then a file will open in front of you:
+
+type
+ 
+---
+kind: url
+name: name_of_your_website
+url: urllink_example.com
+filter: element-by-class:class_name,html2text
+
+
+
+
+for watching the url list:
+type
+urlwatch --list
+
+
+for testing a website:
+type
+urlwatch --test-filter number_of_the_url
+
+example: urlwatch --test-filter 1 
+
+for getting the number type:
+urlwatch --list
+
+result:
+1: GitHub (https://github.com/Traideas/Docx/edit/main/README.md/)
+2: GDPRTableOfContents (https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/)
+3: Introduction (https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/)
+4: bikroy.com (https://bikroy.com/bn/ads/dhaka/vehicles)
+5: franz-immobilien (https://www.franz-immobilien.com/Eigentumswohnungen.htm)
+
+
+They are the urls.
+
+
+1,2,3,4... are the url number here. 
+example: urlwatch --test-filter 1 
+for testing 1. GitHub website 
+

@@ -1,0 +1,9 @@
+dependency update for not working
+
+
+sudo rm /etc/apt/sources.list
+sudo software-properties-gtk
+
+sudo apt-get remove --purge google-chrome-stable
+sudo apt-get update && sudo apt-get dist-upgrade -y
+

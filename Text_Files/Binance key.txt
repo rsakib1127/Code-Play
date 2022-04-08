@@ -1,0 +1,5 @@
+password: asdfasdfGKHKLHLKH^&^&77
+binance password: jflakjdsj&*&*7&SAHKHSWOIYEyi
+
+binance apikey: 4dH7B0KRCdqFYrD3twmmdy9NYxF4RelVEQwpZ841wGlycJcITvJHoP0AM2TDVNce
+binance secret key: r7O9RGoHXBlQxSVk9x1nWoUvp0aNnoMLKkY0WuYiXh0gOnsXbi8BXHi3cIypJo6K

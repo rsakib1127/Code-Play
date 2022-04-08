@@ -1,0 +1,99 @@
+db.createCollection("mycol", { capped : true, autoIndexID : true, size : 6142800, max : 10000 } )
+
+db.testCollection.find({$or: [{"name": "Sakib"}, {"name": "Istiak"}]})
+
+db.testCollection.find()
+db.testCollection.find({"name": "Sakib"})
+
+db.testCollection.find( {"name": "Sakib", "_id" : ObjectId("61114050906d9ad395bc90b2") })
+
+db.testCollection.update({"name": "Sakib"},
+{$set: {"name": "Sakib Rahman"}}
+
+)
+
+db.mycol.find({ $and: [ {<key1>:<value1>}, { <key2>:<value2>} ] })
+
+db.mycol.find(
+   {
+      $or: [
+         {key1: value1}, {key2:value2}
+      ]
+   }
+).pretty()
+
+
+db.mycol.find({"likes": {$gt:10}, $or: [{"by": "tutorials point"},
+   {"title": "MongoDB Overview"}]}).pretty()
+{
+   "_id": ObjectId(7df78ad8902c),
+   "title": "MongoDB Overview", 
+   "description": "MongoDB is no sql database",
+   "by": "tutorials point",
+   "url": "http://www.tutorialspoint.com",
+   "tags": ["mongodb", "database", "NoSQL"],
+   "likes": "100"
+}
+
+
+
+db.empDetails.find(
+	{
+		$nor:[
+			40
+			{"First_Name": "Radhika"},
+			{"Last_Name": "Christopher"}
+		]
+	}
+).pretty()
+
+
+
+db.COLLECTION_NAME.find(
+	{
+		$NOT: [
+			{key1: value1}, {key2:value2}
+		]
+	}
+).pretty()
+
+
+db.empDetails.find( { "Age": { $not: { $gt: "25" } } } )
+{
+	"_id" : ObjectId("5dd6636870fb13eec3963bf7"),
+	"First_Name" : "Fathima",
+	"Last_Name" : "Sheik",
+	"Age" : "24",
+	"e_mail" : "Fathima_Sheik.123@gmail.com",
+	"phone" : "9000054321"
+}
+
+
+db.empDetails.updateMany(
+	{Age:{ $gt: "25" }},
+	{ $set: { Age: '00'}}
+)
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+
+
+db.mycol.remove({'title':'MongoDB Overview'})
+
+
+db.mycol.find({},{"title":1,_id:0})
+{"title":"MongoDB Overview"}
+{"title":"NoSQL Overview"}
+{"title":"Tutorials Point Overview"}
+
+
+
+
+
+db.COLLECTION_NAME.find().limit(NUMBER)
+db.COLLECTION_NAME.find().limit(NUMBER).skip(NUMBER)
+
+
+db.mycol.createIndex({"title":1})
+db.mycol.dropIndex({"title":1})
+
+
+

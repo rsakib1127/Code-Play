@@ -1,0 +1,48 @@
+// pick tables from your base here
+let projects = base.getTable('Design projects');
+let table = base.getTable('Sample');
+
+let query = await table.selectRecordsAsync();
+let len = query.records.length;
+let row = query.records[len-1]
+let outcome1 = row.getCellValueAsString("Outcome 1");
+let outcome2 = row.getCellValueAsString("Outcome 2");
+let returnList = []
+let result = "This color chosen is "
+let outcome1_list = outcome1.split(',')
+let outcome2_list = outcome2.split(',')
+// console.log(outcome2_list)
+let intersection = []
+let union = outcome2_list
+let a = outcome1_list
+let b = outcome2_list
+for(let i in outcome1_list){
+    //console.log(outcome1_list[i])
+            
+    for(let j in outcome2_list){
+        if(outcome1_list[i] == outcome2_list[j])
+            {
+                intersection.push(outcome1_list[i])
+                returnList.push(result+outcome1_list[i])
+                a.splice(parseInt(i), 1)
+                b.splice(parseInt(j), 1)
+            }
+        
+
+    }
+    
+}
+console.log(intersection)
+console.log(a)
+console.log(b)
+union = a.concat(b)
+console.log(union.concat(intersection).toString())
+
+row.getCellValue("Concatenated") == union.concat(intersection).toString()
+let length = len -1
+table.updateRecordAsync(row.id,{
+        "Concatenated": union.concat(intersection).toString(),
+        "Duplicate": intersection.toString(),
+        "Text return": returnList.toString()
+    
+})

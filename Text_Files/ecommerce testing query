@@ -1,0 +1,3 @@
+`https://app.deal-baron.com/v1/catalog/search/ava?q=${searchTerm}&c=US&ip=1.2.3.4`
+
+http://localhost:3000/jobs?search=baby

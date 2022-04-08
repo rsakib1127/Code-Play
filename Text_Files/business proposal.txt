@@ -1,0 +1,22 @@
+Hi, I am Sakib Rahman.
+
+I have gone through your post for a Python developer for four years. 
+
+I said earlier that I am a python developer and I am efficient in backend development, data mining, and very good at development-related bug fixing . My area of expertise is Django Rest Framework development.  I can develop auth service(JWT token-based), REST API, Fast API,  Policy-based permission management.  I am also good at design patterns and software architecture. I have done several projects where backends are developed by Python and frontends are developed by React. 
+
+According to your post, I think I am the best suitable for your project and I would like to hear about the full functionality of your project.  You can contact me on Discord with ID rsakib1127 or skype with ID live:sakibrahman.11.27 .
+
+
+My area of expertise:
+- Python
+- JavaScript
+- Django
+- React
+- REST API
+- MySQL
+- PostgreSQL
+- Docker
+- AWS
+- Apache server
+- Git
+

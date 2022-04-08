@@ -1,0 +1,8 @@
+$ python --version
+Python 2.7.6
+$ python3 --version
+Python 3.4.3
+$ alias python=python3
+$ python --version
+Python 3.4.3
+

@@ -1,0 +1,38 @@
+- I sent a pull request to USERNAME, and he rejected it because my master branch is out of sync with his master. What can I do to fix this?
+
+- My company has an internal Git server used for deployments, we use GitHub, and I work on a local copy of the repository. For workflow purposes, how do I sync my repository to GitHub and the internal Git server?
+
+HINT: One common option is Git remotes. There are others!
+
+- One of my dev collaborator forked my private repo without explicit permission. Is there a way to setup permissions of this sort? Also, other than asking the collaborator to delete the forked repo, can I actually delete it?
+
+
+
+1. For sending pull request first you need to sync the local git directory with the remote git directory. The "git fetch" command will do all the jobs for you.
+Then you can send pull request safely.
+For avoiding collition with the remote master branches you can create your own branch with a meaningful name. Then edit your code in that newly created branch. For updating your branch to the remote git repository you just need to push the code in the remote repository. The github or gitlab or some thing xyz repository will automatically add your newly created branch in their remote repository. The change in the newly created branch will not affect the remote master branch. In fact you can rewrite and edit the master branch code if you create a new branch under the master branch. After editing and testing you can merge the newly edited code of your branch to the master branch.
+
+
+2.  You can easily maintain multiple remote repositories and git servers. For being able to do that you just have to add some remote repository to your git folder. Suppose your office has a local git server and you maintain a GitHub account so now what you can do to update your code on that two servers simultaneously.
+First, check your remote repositories with the below-mentioned command
+	"git remote -v"
+This will show you all the remote repositories.
+
+Now for adding a new remote repository type:
+	git remote add <name> <url>
+example: git remote add office_repository https://gitlab.com/officexyz/testremoterepo
+	
+This will add the new official remote repository to your local git folder. Then for pushing your code to the official remote git server's repository you have to use the push command mentioning the remote repository name:
+	git push <remote repository> <branch>
+example: git push office_repository master
+
+You can also switch the remote repository and a remote repository of your own choice as a default remote repository.
+You can do that just using --set-upstream. The command will be like: git push --set-upstream <remote repository> <branch>
+example: git push --set-upstream office_repository master
+
+Then use the regular git push command.	
+In this way, you can maintain as many as the remote server you want.
+
+
+
+3. No collaborator can fork your private repository without any permission set by you on GitHub. But there are ways to set permission for a collaborator. You can invite someone in for collaborating in your private repository. For providing permission you have made few changes in the Manage access section. If you want to remove permission for a collaborator and delete the forked repository you just have to remove that specific collaborator from the collaborator section the GitHub will delete the forked repository of that collaborator from the online repository. But the person will have a copy of the forked repository in the local computer.

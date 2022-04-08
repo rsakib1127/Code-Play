@@ -1,0 +1,21 @@
+
+rustc <filename>.rs     #for compiling a <filename>.rs
+./<filename> # for running the file
+
+for building a project in cargo
+
+cargo new project_name 
+cd project_name
+cd src
+ls
+nano main.rs
+cd ..
+cargo build # will build the project
+
+cargo run # For running the project 
+
+cargo check #Cargo also provides a command called cargo check. This command quickly checks 			# your code to make sure it compiles but doesn’t produce an executable
+
+cargo build --release  # For final build and it will also optimise your code and it will generate target/release instead of target/debug
+
+

@@ -1,0 +1,40 @@
+/** grab client attention **/
+
+/** past job experience **/
+
+I am currently into blockchain and web development. Also, work as a database schema designer and DevOps. I provide Git solutions too. I can set up CI/CD pipeline. 
+I always push myself to complete the task as fast as possible but also not compromise with the quality of that product. Client satisfaction is the main motto of my service. 
+
+
+
+Let's jump on an initial 10-minute call (free of charge) so that we can discuss your project in more detail and identify how my skillset will work best for you and provide immense value to your organization as well.
+
+Best Regards,
+Sakib Rahman
+UpWork Freelancer
+
+
+
+
+Hi, there. I have read your post. I think you are opt to develop an Analytical CRM because most of the features you mentioned in the post are feature of an Analytical CRM. You may also need help in Frontend Development.
+Your project is quite similar to one of my project that I had developed earlier and I poss all the skillset those you mentioned in your project.
+
+I am a software Architect and currently working on Django and React Framework based projects and have four years of development experience. Also, work as a database schema designer and DevOps. I provide Git solutions too. I can set up CI/CD pipeline.
+I always push myself to complete the task as fast as possible but not compromise with the quality of that product. Client satisfaction is the main motto of my service.
+
+Let's jump on an initial 10-minute call (free of charge) so that we can discuss your project in more detail and identify how my skillset will work best for you.
+
+Best Regards,
+Sakib Rahman
+UpWork Freelancer
+ 
+less
+Describe your recent experience with similar projects
+I have develop LMS system which has some similar features those you mentioned in the post.
+Please list any certifications related to this project
+I am a certified software engineer. I have worked with two different companies. I have developed CRM for one of those companies. Python and JavaScript are my primary programming language. I am expert in both SQL and NoSQL database schema designing.
+Include a link to your GitHub profile and/or website
+GitHub: rsakib1127@gmail.com
+Note: All of my production level projects are private. But I can give you a demo of my projects in a meeting.
+What frameworks have you worked with?
+I mostly work with Django (Python), React and Express(Node.js). I have worked with Flask but I think you don't need that Framework.

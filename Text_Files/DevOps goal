@@ -1,0 +1,11 @@
+# AWS
+# Azure DevOps
+# Kubernetes, Docker
+# Ejabberd
+# Big Data: RDS, DMS, RedShift, S3
+# Stream Processing : Kafka, Connect, EMR, Glue, Spark Streaming
+
+
+Amazon EC2, EKS, IAM, Route53, ECR, RDS, Redis, VPC
+Implemented load balanced, scalable AWS EKS cluster in multi-AZ environment.
+Jenkins as CICD pipeline using Multi-branch Pipeline

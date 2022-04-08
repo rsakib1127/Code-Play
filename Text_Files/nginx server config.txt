@@ -1,0 +1,60 @@
+sudo mkdir -p /var/jusadeals/html
+sudo chown -R $USER:$USER /var/www/jusadeals/html
+sudo chmod -R 755 /var/www/jusadeals
+nano /var/www/jusadeals/html/index.html
+sudo nano /etc/nginx/sites-available/jusadeals
+
+
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/jusadeals/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name jusadeals www.jusadeals;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+
+
+
+sudo unlink /etc/nginx/sites-enabled/default
+cd /etc/nginx/sites-available
+nano reverse-proxy.conf
+
+server {
+        listen 80;
+        listen [::]:80;
+
+        access_log /var/log/nginx/reverse-access.log;
+        error_log /var/log/nginx/reverse-error.log;
+
+        location / {
+                    proxy_pass http://127.0.0.1:3000;
+  }
+}
+
+
+
+ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
+
+sudo nginx -t
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+ssl 
+cd /etc/nginx
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/cert.key -out /etc/nginx/cert.crt
+
+
+sudo nano /etc/nginx/sites-enabled/reverse-proxy.conf
+sudo service nginx restart
+
+
+
+
+
+

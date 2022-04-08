@@ -1,0 +1,10 @@
+Final docker-compose.yml should:
+
+- mount host machine VOLUME, where all AVDs located. AVDs are already created and stored on host machine.
+- start Appium server
+- start Android Emulator with one of the AVDs
+- start my ruby script that will connect to Appium and automate some actions
+
+* emulator in docker will need KVM
+
+As a result, I want to run docker-compose with one parameter - AVD name.

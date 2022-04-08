@@ -1,0 +1,26 @@
+# for watching all the avilable list 
+nvm ls-remote
+
+# for installing a new version
+nvm install 16.14.2
+
+# for using the newly installed version
+nvm use 14.17.4
+
+# for checking a new version
+node -v
+
+for installing the nvm 
+
+sudo apt install curl 
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
+source ~/.profile 
+
+
+source ~/.profile 
+nvm install 16.14.2
+
+sudo cp  /home/sakib/.nvm/versions/node/v16.14.2/bin/node /bin
+
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install nodejs

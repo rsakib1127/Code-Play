@@ -1,0 +1,12 @@
+First open your terminal
+# For accessing digital ocean terminal type
+
+ssh root@157.230.125.124
+
+# then enter password, the password is written below
+zAq1 3edc
+
+# then type :
+urlwatch 
+
+# for observing the jobs or urls
